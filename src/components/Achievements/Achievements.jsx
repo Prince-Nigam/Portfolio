@@ -59,7 +59,6 @@ const Achievements = ({ darkMode }) => {
   const statGlass = darkMode
     ? { background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.08)' }
     : { background: 'rgba(255,255,255,0.8)', border: '1px solid rgba(0,0,0,0.08)', boxShadow: '0 2px 12px rgba(0,0,0,0.06)' };
-  const t = darkMode ? 'text-white' : 'text-slate-800';
   const sm = darkMode ? 'text-white/40' : 'text-slate-400';
 
   return (

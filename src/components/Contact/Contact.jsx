@@ -66,8 +66,6 @@ const Contact = ({ darkMode }) => {
     ? { background: 'rgba(16,185,129,0.08)', border: '1px solid rgba(16,185,129,0.2)' }
     : { background: 'rgba(16,185,129,0.06)', border: '1px solid rgba(16,185,129,0.2)' };
 
-  const inputBase = `form-input ${errors['name'] ? 'border-red-400' : ''}`;
-
   return (
     <SectionWrapper id="contact">
       <div className="section-container">
@@ -77,7 +75,7 @@ const Contact = ({ darkMode }) => {
             style={{ background: 'rgba(168,85,247,0.1)', border: '1px solid rgba(168,85,247,0.2)', color: '#a855f7' }}>
             Get In Touch
           </span>
-          <h2 className="section-title">Let's <span className="gradient-text">Connect</span></h2>
+          <h2 className="section-title">Let&apos;s <span className="gradient-text">Connect</span></h2>
           <p className="section-subtitle">Open to internships, collaborations, and exciting new opportunities.</p>
         </motion.div>
 
@@ -86,7 +84,7 @@ const Contact = ({ darkMode }) => {
           {/* Left */}
           <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="lg:col-span-2 space-y-5">
             <div className="glass p-6 rounded-2xl">
-              <h3 className={`text-lg font-bold mb-2 ${t}`}>Let's talk</h3>
+              <h3 className={`text-lg font-bold mb-2 ${t}`}>Let&apos;s talk</h3>
               <p className={`text-sm leading-relaxed mb-6 ${m}`}>
                 Whether you have a project idea, job opportunity, or just want to say hi — my inbox is always open.
               </p>

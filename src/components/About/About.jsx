@@ -14,7 +14,6 @@ const About = ({ darkMode }) => {
   const t = darkMode ? 'text-white' : 'text-slate-800';
   const m = darkMode ? 'text-white/50' : 'text-slate-500';
   const sm = darkMode ? 'text-white/40' : 'text-slate-400';
-  const border = darkMode ? 'border-white/[0.06]' : 'border-slate-200';
   const quoteStyle = darkMode
     ? { background: 'linear-gradient(135deg,rgba(168,85,247,0.08),rgba(59,130,246,0.08))', border: '1px solid rgba(168,85,247,0.15)' }
     : { background: 'linear-gradient(135deg,rgba(168,85,247,0.04),rgba(59,130,246,0.04))', border: '1px solid rgba(168,85,247,0.15)' };
@@ -38,15 +37,15 @@ const About = ({ darkMode }) => {
           {/* Left */}
           <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="space-y-6">
             <div className="glass p-8 rounded-2xl space-y-4">
-              <h3 className={`text-2xl font-bold ${t}`}>Hello! I'm <span className="gradient-text">Prince Nigam</span></h3>
+              <h3 className={`text-2xl font-bold ${t}`}>Hello! I&apos;m <span className="gradient-text">Prince Nigam</span></h3>
               <p className={`leading-relaxed ${m}`}>{personalInfo.bio}</p>
               <p className={`leading-relaxed ${m}`}>
-                I'm currently pursuing B.Tech in Computer Science Engineering with specialization in{' '}
+                I&apos;m currently pursuing B.Tech in Computer Science Engineering with specialization in{' '}
                 <span className="text-purple-500 font-medium">Data Science & Machine Learning</span> at
                 Gautam Buddha University.
               </p>
               <p className={`leading-relaxed ${m}`}>
-                When I'm not coding, you'll find me exploring new AI/ML papers, solving problems on LeetCode,
+                When I&apos;m not coding, you&apos;ll find me exploring new AI/ML papers, solving problems on LeetCode,
                 or learning Salesforce on Trailhead.
               </p>
             </div>
@@ -81,7 +80,7 @@ const About = ({ darkMode }) => {
 
           {/* Right */}
           <motion.div initial={{ opacity: 0, x: 40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }} className="space-y-4">
-            <h3 className={`text-xl font-bold mb-6 ${t}`}>What I'm Passionate About</h3>
+            <h3 className={`text-xl font-bold mb-6 ${t}`}>What I&apos;m Passionate About</h3>
             {traits.map((trait, i) => (
               <motion.div key={trait.title} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} whileHover={{ x: 6 }} className="glass p-5 rounded-xl flex gap-4 group cursor-default">
                 <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 text-xl group-hover:scale-110 transition-transform"
@@ -97,7 +96,7 @@ const About = ({ darkMode }) => {
 
             <div className="p-6 rounded-2xl mt-4" style={quoteStyle}>
               <blockquote className={`italic text-sm leading-relaxed ${m}`}>
-                "The best way to predict the future is to invent it."
+                &ldquo;The best way to predict the future is to invent it.&rdquo;
               </blockquote>
               <p className={`text-xs mt-2 ${sm}`}>— Alan Kay</p>
             </div>

@@ -99,7 +99,7 @@ const Hero = ({ darkMode }) => {
 
             {/* Buttons */}
             <motion.div variants={itemVariants} className="flex flex-wrap gap-4 justify-center lg:justify-start mb-10">
-              <motion.a href={personalInfo.resumeUrl} download className="btn-primary text-base" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <motion.a href={personalInfo.resume.pdf} download className="btn-primary text-base" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <FiDownload size={18} /> Download Resume
               </motion.a>
               <motion.button onClick={() => scrollToSection('contact')} className="btn-secondary text-base" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>

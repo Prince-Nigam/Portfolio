@@ -1,0 +1,18 @@
+{
+  "enabled": true,
+  "name": "Portfolio Live Reload",
+  "description": "Jab bhi data.js ya koi src file save ho, dev server automatically portfolio update karta hai",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "src/data/data.js",
+      "src/**/*.jsx",
+      "src/**/*.css"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "User ne src/data/data.js ya koi portfolio file edit ki hai. Check karo ki dev server (localhost:3000) chal raha hai ya nahi. Agar nahi chal raha toh start karo: node_modules\\.bin\\vite.cmd --port 3000 --host"
+  }
+}

@@ -99,7 +99,7 @@ const Hero = ({ darkMode }) => {
 
             {/* Buttons */}
             <motion.div variants={itemVariants} className="flex flex-wrap gap-4 justify-center lg:justify-start mb-10">
-              <motion.a href="/resume.pdf" download className="btn-primary text-base" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <motion.a href={personalInfo.resumeUrl} download className="btn-primary text-base" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <FiDownload size={18} /> Download Resume
               </motion.a>
               <motion.button onClick={() => scrollToSection('contact')} className="btn-secondary text-base" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
@@ -133,10 +133,10 @@ const Hero = ({ darkMode }) => {
               className={`flex gap-8 justify-center lg:justify-start mt-10 pt-8 border-t ${statBorder}`}
             >
               {[
-                { value: '10+', label: 'Projects' },
+                { value: '1', label: 'Projects' },
                 { value: '5+', label: 'Certifications' },
                 { value: '200+', label: 'LeetCode' },
-                { value: '3★', label: 'CodeChef' },
+               
               ].map(({ value, label }) => (
                 <div key={label} className="text-center lg:text-left">
                   <div className="text-2xl font-black gradient-text">{value}</div>

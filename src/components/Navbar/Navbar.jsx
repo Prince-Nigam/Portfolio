@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiSun, FiMoon, FiMenu, FiX } from 'react-icons/fi';
-import { navLinks } from '../../data/data';
+import { navLinks, personalInfo } from '../../data/data';
 
 const Navbar = ({ darkMode, setDarkMode }) => {
   const [scrolled, setScrolled] = useState(false);
@@ -133,7 +133,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
           {/* Resume Button */}
           <motion.a
-            href="/resume.pdf"
+            href={personalInfo.resumeUrl}
             download
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -190,7 +190,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                 </motion.button>
               ))}
               <a
-                href="/resume.pdf"
+                href={personalInfo.resumeUrl}
                 download
                 className="btn-primary text-sm mt-2 justify-center"
               >

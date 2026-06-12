@@ -135,8 +135,8 @@ const Hero = ({ darkMode }) => {
               {[
                 { value: '1', label: 'Projects' },
                 { value: '5+', label: 'Certifications' },
-                { value: '200+', label: 'LeetCode' },
-                { value: '3★', label: 'CodeChef' },
+                { value: '100+', label: 'LeetCode' },
+               
               ].map(({ value, label }) => (
                 <div key={label} className="text-center lg:text-left">
                   <div className="text-2xl font-black gradient-text">{value}</div>

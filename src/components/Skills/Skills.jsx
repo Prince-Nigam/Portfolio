@@ -88,7 +88,7 @@ const Skills = ({ darkMode }) => {
             Technologies I Work With
           </p>
           <div className="flex flex-wrap gap-3 justify-center">
-            {['React','Python','JavaScript','Node.js','PHP','MySQL','MongoDB','Java','C++','Git','GitHub','Salesforce','Machine Learning','Data Analysis','HTML5','CSS3','Tailwind'].map((tech) => (
+            {['Python','JavaScript','HTML5','CSS3','SQL','PHP','C++','MySQL','Pandas','Machine Learning','Data Analysis','Generative AI','Google Cloud (GCP)','Web Crypto API','Git','GitHub','VS Code'].map((tech) => (
               <motion.span key={tech} whileHover={{ scale: 1.05, y: -2 }}
                 className="px-4 py-2 rounded-xl text-sm font-medium cursor-default transition-all duration-200 hover:text-purple-500"
                 style={tagStyle}>

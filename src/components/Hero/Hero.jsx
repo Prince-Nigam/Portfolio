@@ -78,7 +78,7 @@ const Hero = ({ darkMode }) => {
               variants={itemVariants}
               className="text-5xl sm:text-6xl lg:text-7xl font-black mb-4 leading-tight tracking-tight"
             >
-              <span className={darkMode ? 'text-white' : 'text-slate-800'}>Hi, I&apos;m </span>
+              <span className={darkMode ? 'text-white' : 'text-slate-800'}>Hi, I'm </span>
               <span className="gradient-text">Prince</span>
               <br />
               <span className={darkMode ? 'text-white/90' : 'text-slate-700'}>Nigam</span>
@@ -86,7 +86,7 @@ const Hero = ({ darkMode }) => {
 
             {/* Typing */}
             <motion.div variants={itemVariants} className="mb-6 h-10 flex items-center justify-center lg:justify-start">
-              <span className={`text-xl sm:text-2xl font-semibold mr-2 ${muted}`}>I&apos;m a</span>
+              <span className={`text-xl sm:text-2xl font-semibold mr-2 ${muted}`}>I'm a</span>
               <span className="text-xl sm:text-2xl font-bold gradient-text">
                 <TypeAnimation sequence={typeSequence} wrapper="span" cursor repeat={Infinity} />
               </span>
@@ -99,7 +99,7 @@ const Hero = ({ darkMode }) => {
 
             {/* Buttons */}
             <motion.div variants={itemVariants} className="flex flex-wrap gap-4 justify-center lg:justify-start mb-10">
-              <motion.a href={personalInfo.resumeUrl} download className="btn-primary text-base" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <motion.a href="/resume.pdf" download className="btn-primary text-base" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <FiDownload size={18} /> Download Resume
               </motion.a>
               <motion.button onClick={() => scrollToSection('contact')} className="btn-secondary text-base" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
@@ -136,7 +136,7 @@ const Hero = ({ darkMode }) => {
                 { value: '1', label: 'Projects' },
                 { value: '5+', label: 'Certifications' },
                 { value: '200+', label: 'LeetCode' },
-               
+                { value: '3★', label: 'CodeChef' },
               ].map(({ value, label }) => (
                 <div key={label} className="text-center lg:text-left">
                   <div className="text-2xl font-black gradient-text">{value}</div>

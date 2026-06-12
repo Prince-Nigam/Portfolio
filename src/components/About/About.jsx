@@ -41,7 +41,7 @@ const About = ({ darkMode }) => {
               <p className={`leading-relaxed ${m}`}>{personalInfo.bio}</p>
               <p className={`leading-relaxed ${m}`}>
                 I&apos;m currently pursuing B.Tech in Computer Science Engineering with specialization in{' '}
-                <span className="text-purple-500 font-medium">Data Science & Machine Learning</span> at
+                <span className="text-purple-500 font-medium">Data Science</span> at
                 Gautam Buddha University.
               </p>
               <p className={`leading-relaxed ${m}`}>
@@ -63,7 +63,7 @@ const About = ({ darkMode }) => {
             <div className="grid grid-cols-2 gap-3">
               {[
                 { icon: '🎓', label: 'University', value: 'Gautam Buddha University' },
-                { icon: '📚', label: 'Degree', value: 'B.Tech CSE (DS/ML)' },
+                { icon: '📚', label: 'Degree', value: 'B.Tech CSE (Data Science)' },
                 { icon: '📍', label: 'Location', value: 'Greater Noida, UP' },
                 { icon: '📧', label: 'Email', value: personalInfo.email },
               ].map((item) => (

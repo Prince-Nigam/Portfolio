@@ -102,7 +102,7 @@ export const projects = [
     gradient: "from-purple-600 to-blue-600",
     tags: ["HTML", "CSS", "JavaScript", "Web Crypto API", "SHA-256"],
     github: "https://github.com/Prince-Nigam/Secure-Vault",
-    live: "https://prince-nigam.github.io/Secure-Vault/notesapp",
+    live: "https://secure-vault-data.netlify.app",
     featured: true,
     status: "Completed",
   },

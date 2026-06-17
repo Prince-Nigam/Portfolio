@@ -133,7 +133,7 @@ const Hero = ({ darkMode }) => {
               className={`flex gap-8 justify-center lg:justify-start mt-10 pt-8 border-t ${statBorder}`}
             >
               {[
-                { value: '1', label: 'Projects' },
+                { value: '2', label: 'Projects' },
                 { value: '5+', label: 'Certifications' },
                 { value: '100+', label: 'LeetCode' },
                

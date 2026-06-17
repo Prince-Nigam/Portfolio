@@ -93,7 +93,7 @@ const ProfileImage = () => {
         className="absolute -bottom-4 -left-4 glass px-3 py-2 rounded-xl text-xs font-semibold"
         style={{ border: '1px solid rgba(59,130,246,0.3)', color: 'rgba(147,197,253,0.9)' }}
       >
-        ☁️ Salesforce
+        ☁️ Google Cloud
       </motion.div>
       <motion.div
         animate={{ y: [0, -6, 0] }}

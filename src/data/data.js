@@ -25,7 +25,7 @@ export const personalInfo = {
   resumeUrl: "/resume.pdf",
   profileImage: "/image.png",
   social: {
-    github: "https://github.com/princenigam",
+    github: "https://github.com/Prince-Nigam",
     linkedin: "https://linkedin.com/in/prince-nigam-60227528a",
     twitter: "https://twitter.com/princenigam",
     instagram: "https://instagram.com/princenigam",

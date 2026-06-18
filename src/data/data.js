@@ -165,7 +165,7 @@ export const certifications = [
     description: "Certification covering Google Cloud Platform fundamentals, cloud infrastructure, and Generative AI concepts.",
     icon: "☁️",
     color: "blue",
-    link: "https://linkedin.com/in/princenigam",
+    link: "https://www.linkedin.com/in/prince-nigam-60227528a/overlay/Certifications/1292426128/treasury/?profileId=ACoAAEYplCIB-WqJZezmyhScbMlZs_fHSPnJV7I",
     badge: "GCP",
   },
   {

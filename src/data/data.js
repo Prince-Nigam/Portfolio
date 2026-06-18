@@ -201,7 +201,7 @@ export const certifications = [
     description: "Certified in Node.js and JavaScript (Basic) by HackerRank demonstrating strong algorithmic and programming skills.",
     icon: "⚡",
     color: "violet",
-    link: "https://hackerrank.com",
+    link: "https://www.hackerrank.com/certificates/iframe/5b6ff647604d",
     badge: "JS",
   },
   {

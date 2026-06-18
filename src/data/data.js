@@ -206,6 +206,18 @@ export const certifications = [
   },
   {
     id: 5,
+    title: "Node.js (Basic)",
+    issuer: "HackerRank",
+    date: "2024",
+    credentialId: "HackerRank",
+    description: "Certified in Node.js and JavaScript (Basic) by HackerRank demonstrating strong algorithmic and programming skills.",
+    icon: "⚡",
+    color: "violet",
+    link: "https://www.hackerrank.com/certificates/iframe/0cec765b03c1",
+    badge: "JS",
+  },
+  {
+    id: 6,
     title: "HTML Essentials",
     issuer: "LinkedIn Learning",
     date: "2023",

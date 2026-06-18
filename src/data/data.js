@@ -223,7 +223,7 @@ export const certifications = [
     date: "2024",
     credentialId: "HackerRank",
     description: "Certified in SQL (Basic) by HackerRank demonstrating strong database querying skills.",
-    icon: "�",
+    icon: "💾",
     color: "blue",
     link: "https://www.hackerrank.com/certificates/iframe/93102c4eb77f",
     badge: "SQL",

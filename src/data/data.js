@@ -192,8 +192,20 @@ export const certifications = [
     link: "https://www.linkedin.com/posts/prince-nigam-60227528a_deloitte-forage-dataanalytics-share-7468402273799528448-MdHF/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEYplCIB-WqJZezmyhScbMlZs_fHSPnJV7I",
     badge: "DA",
   },
-  {
+   {
     id: 4,
+    title: "HTML Essentials",
+    issuer: "LinkedIn Learning",
+    date: "2023",
+    credentialId: "LinkedIn",
+    description: "Foundational certification covering HTML5 structure, semantics, forms, and modern web development practices.",
+    icon: "🌐",
+    color: "blue",
+    link: "https://www.linkedin.com/posts/prince-nigam-60227528a_cisconetworkingacademy-jsinstitute-htmlessentials-share-7468396504550907904-T75I/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEYplCIB-WqJZezmyhScbMlZs_fHSPnJV7I",
+    badge: "HTML",
+  },
+  {
+    id: 5,
     title: "JavaScript (Basic)",
     issuer: "HackerRank",
     date: "2024",
@@ -205,7 +217,7 @@ export const certifications = [
     badge: "JS",
   },
   {
-    id: 5,
+    id: 6,
     title: "Node (Basic)",
     issuer: "HackerRank",
     date: "2024",
@@ -217,7 +229,7 @@ export const certifications = [
     badge: "Node",
   },
   {
-    id: 6,
+    id: 7,
     title: "SQL (Basic)",
     issuer: "HackerRank",
     date: "2024",
@@ -229,7 +241,7 @@ export const certifications = [
     badge: "SQL",
   },
   {
-    id: 7,
+    id: 8,
     title: "React(Basic)",
     issuer: "HackerRank",
     date: "2024",
@@ -240,18 +252,7 @@ export const certifications = [
     link: "https://www.hackerrank.com/certificates/iframe/0475afd2782e",
     badge: "React",
   },
-  {
-    id: 8,
-    title: "HTML Essentials",
-    issuer: "LinkedIn Learning",
-    date: "2023",
-    credentialId: "LinkedIn",
-    description: "Foundational certification covering HTML5 structure, semantics, forms, and modern web development practices.",
-    icon: "🌐",
-    color: "blue",
-    link: "https://www.linkedin.com/posts/prince-nigam-60227528a_cisconetworkingacademy-jsinstitute-htmlessentials-share-7468396504550907904-T75I/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEYplCIB-WqJZezmyhScbMlZs_fHSPnJV7I",
-    badge: "HTML",
-  },
+  
 ];
 
 export const achievements = [

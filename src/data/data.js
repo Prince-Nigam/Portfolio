@@ -194,7 +194,7 @@ export const certifications = [
   },
   {
     id: 4,
-    title: "Node.js (Basic) & JavaScript (Basic)",
+    title: "JavaScript (Basic)",
     issuer: "HackerRank",
     date: "2024",
     credentialId: "HackerRank",

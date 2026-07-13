@@ -1,5 +1,5 @@
 // ============================================================
-//  PORTFOLIO DATA FILE — Resume se updated real data
+//  PORTFOLIO DATA FILE — Updated with latest resume
 // ============================================================
 
 export const personalInfo = {
@@ -9,19 +9,19 @@ export const personalInfo = {
   title: "B.Tech Data Science Student",
   roles: [
     "Data Science Student",
-    "AI/ML Enthusiast",
+    "Salesforce Developer",
     "Full Stack Developer",
+    "AI/ML Enthusiast",
     "Cloud Computing Learner",
-    "Problem Solver",
   ],
   tagline: "Building the future with code, data, and intelligence.",
-  bio: `Motivated and detail-oriented B.Tech Data Science student at Gautam Buddha University with a strong foundation in Data Science, Machine Learning, Cloud Computing, Artificial Intelligence, and Data Privacy. Proficient in Python, SQL, and data analysis tools with hands-on experience through academic projects, certifications, and hackathons.`,
+  bio: `Motivated and detail-oriented B.Tech Computer Science & Engineering student at Gautam Buddha University with a strong foundation in Data Science, Machine Learning, Cloud Computing, Artificial Intelligence, and Data Privacy. Proficient in Python, SQL, and data analysis tools with hands-on experience through academic projects, internships, certifications, and hackathons.`,
   careerObjective: `Seeking opportunities to apply and expand technical knowledge while contributing to innovative and data-driven solutions. Strong analytical, problem-solving, and teamwork skills with a commitment to continuous learning and technical excellence.`,
   email: "princenigam972@gmail.com",
   phone: "+91 7459883506",
   location: "Greater Noida, Uttar Pradesh, India",
   university: "Gautam Buddha University",
-  degree: "B.Tech in Data Science",
+  degree: "B.Tech in Computer Science and Engineering",
   resumeUrl: "/resume.pdf",
   profileImage: "/image.png",
   social: {
@@ -53,6 +53,7 @@ export const skills = [
       { name: "HTML5", level: 90 },
       { name: "CSS3", level: 88 },
       { name: "JavaScript", level: 85 },
+      { name: "React.js", level: 78 },
     ],
   },
   {
@@ -60,9 +61,21 @@ export const skills = [
     icon: "🗄️",
     color: "cyan",
     items: [
-      { name: "PHP", level: 75 },
+      { name: "Node.js", level: 76 },
+      { name: "Express.js", level: 74 },
       { name: "MySQL", level: 82 },
-      { name: "SQL", level: 80 },
+      { name: "MongoDB", level: 75 },
+    ],
+  },
+  {
+    category: "Salesforce",
+    icon: "☁️",
+    color: "blue",
+    items: [
+      { name: "Apex & LWC", level: 78 },
+      { name: "SOQL / SOSL", level: 76 },
+      { name: "Flow Builder", level: 74 },
+      { name: "Apex Triggers", level: 72 },
     ],
   },
   {
@@ -78,7 +91,7 @@ export const skills = [
   },
   {
     category: "Cloud & Tools",
-    icon: "☁️",
+    icon: "🛠️",
     color: "violet",
     items: [
       { name: "Google Cloud (GCP)", level: 75 },
@@ -95,9 +108,9 @@ export const projects = [
     title: "SecureVault",
     category: "Full Stack",
     description:
-      "A secure client-side encrypted note vault for storing sensitive information with SHA-256 password hashing and secure authentication using the Web Crypto API.",
+      "A secure file storage and management application implementing SHA-256 password hashing and the Web Crypto API to safeguard user credentials and strengthen client-side security.",
     longDescription:
-      "Developed a secure client-side encrypted note vault. Implemented SHA-256 password hashing and secure authentication using the Web Crypto API. Enabled encryption and decryption of notes to protect confidential user data. Designed a responsive UI using HTML, CSS, and JavaScript. Ensured privacy by processing and storing data locally without server-side exposure.",
+      "Developed a secure client-side encrypted note vault. Implemented SHA-256 password hashing and secure authentication using the Web Crypto API. Designed a responsive, cross-browser compatible UI using HTML, CSS, and JavaScript delivering a seamless experience across desktop and mobile devices.",
     image: null,
     gradient: "from-purple-600 to-blue-600",
     tags: ["HTML", "CSS", "JavaScript", "Web Crypto API", "SHA-256"],
@@ -109,14 +122,14 @@ export const projects = [
   {
     id: 2,
     title: "Fresh Grocery Mart",
-    category: "Frontend",
+    category: "Full Stack",
     description:
-      "A modern grocery shopping web app with product listing, admin dashboard, user login/signup, order management, and a clean responsive UI.",
+      "A full-stack grocery e-commerce platform with secure user authentication, product catalog, shopping cart, and order management using the MERN stack.",
     longDescription:
-      "Fresh Mart Grocery is a full-featured grocery web application built with HTML, CSS, and JavaScript. It includes a user-facing storefront, login and signup pages, order tracking, user profile, and an admin panel for managing products and orders.",
+      "Developed a full-stack grocery e-commerce platform with secure user authentication, product catalog, shopping cart, and order management functionalities using the MERN stack. Designed a responsive, intuitive, and mobile-friendly UI using React.js.",
     image: null,
     gradient: "from-green-500 to-cyan-500",
-    tags: ["HTML5", "CSS3", "JavaScript", "Admin Dashboard", "Responsive"],
+    tags: ["React.js", "Node.js", "Express.js", "MongoDB", "REST APIs"],
     github: "https://github.com/Prince-Nigam/Fresh-Mart-Grocery",
     live: "https://fresh-grocery-mart1.netlify.app",
     featured: true,
@@ -124,24 +137,42 @@ export const projects = [
   },
 ];
 
+export const experience = [
+  {
+    id: 1,
+    role: "Salesforce Developer Intern",
+    company: "Salesforce",
+    duration: "June 2026 – July 2026",
+    type: "Internship",
+    icon: "☁️",
+    color: "blue",
+    points: [
+      "Developed a Placement Management System on Salesforce using Lightning Web Components (LWC), Apex, SOQL/SOSL, and custom objects to automate student registration, company management, application tracking, and placement workflows.",
+      "Designed and implemented Apex Classes, Apex Triggers, Validation Rules, and Record-Triggered Flows to automate business processes, enforce data integrity, and streamline placement operations.",
+      "Optimized application performance by writing efficient SOQL/SOSL queries, following Salesforce development best practices, and creating scalable, maintainable solutions.",
+      "Built responsive and reusable Lightning Web Components (LWC) integrated with Apex controllers to deliver an intuitive user interface for students, recruiters, and placement administrators.",
+    ],
+  },
+];
+
 export const education = [
   {
     id: 1,
-    degree: "B.Tech — Data Science",
+    degree: "B.Tech — Computer Science and Engineering",
     specialization: "Data Science, ML, Cloud Computing & AI",
     institution: "Gautam Buddha University",
     location: "Greater Noida, UP",
     year: "Aug 2023 – Aug 2027",
     grade: "In Progress",
     description:
-      "Specializing in Data Science, Machine Learning, Cloud Computing, Artificial Intelligence, and Data Privacy. Hands-on experience through academic projects, certifications, and hackathons.",
+      "Specializing in Data Science, Machine Learning, Cloud Computing, Artificial Intelligence, and Data Privacy. Hands-on experience through academic projects, internships, certifications, and hackathons.",
     icon: "🎓",
     color: "purple",
     current: true,
   },
   {
     id: 2,
-    degree: "Intermediate (Class XII)",
+    degree: "Class XII (Higher Secondary)",
     specialization: "Science Stream",
     institution: "Shri Sundar Lal Inter College",
     location: "Barabanki, UP",
@@ -162,22 +193,22 @@ export const certifications = [
     issuer: "Google Cloud",
     date: "2024",
     credentialId: "LinkedIn",
-    description: "Certification covering Google Cloud Platform fundamentals, cloud infrastructure, and Generative AI concepts.",
+    description: "Foundational expertise in Google Cloud Platform and Generative AI concepts.",
     icon: "☁️",
     color: "blue",
-    link: "https://www.linkedin.com/in/prince-nigam-60227528a/overlay/Certifications/1292426128/treasury/?profileId=ACoAAEYplCIB-WqJZezmyhScbMlZs_fHSPnJV7I",
+    link: "https://linkedin.com/in/prince-nigam-60227528a",
     badge: "GCP",
   },
   {
     id: 2,
-    title: "GenAI Powered Data Analytics Job Simulation",
-    issuer: "LinkedIn Learning",
+    title: "Tata GenAI Powered Data Analytics Job Simulation",
+    issuer: "Tata / LinkedIn",
     date: "2024",
     credentialId: "LinkedIn",
-    description: "Certificate of Completion for GenAI powered data analytics job simulation covering real-world data analysis scenarios.",
+    description: "Applied AI-driven techniques for data analytics in Tata's GenAI job simulation.",
     icon: "🤖",
     color: "purple",
-    link: "https://www.linkedin.com/posts/prince-nigam-60227528a_tata-forage-dataanalytics-share-7468028550915448832-VvJI/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEYplCIB-WqJZezmyhScbMlZs_fHSPnJV7I",
+    link: "https://linkedin.com/in/prince-nigam-60227528a",
     badge: "AI",
   },
   {
@@ -186,73 +217,24 @@ export const certifications = [
     issuer: "Deloitte / LinkedIn",
     date: "2024",
     credentialId: "LinkedIn",
-    description: "Industry-level data analytics simulation by Deloitte covering real business data problems and analytical solutions.",
+    description: "Gained practical experience in data analysis and visualization through Deloitte's simulation.",
     icon: "📊",
     color: "cyan",
-    link: "https://www.linkedin.com/posts/prince-nigam-60227528a_deloitte-forage-dataanalytics-share-7468402273799528448-MdHF/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEYplCIB-WqJZezmyhScbMlZs_fHSPnJV7I",
+    link: "https://linkedin.com/in/prince-nigam-60227528a",
     badge: "DA",
   },
-   {
-    id: 4,
-    title: "HTML Essentials",
-    issuer: "LinkedIn Learning",
-    date: "2023",
-    credentialId: "LinkedIn",
-    description: "Foundational certification covering HTML5 structure, semantics, forms, and modern web development practices.",
-    icon: "🌐",
-    color: "blue",
-    link: "https://www.linkedin.com/posts/prince-nigam-60227528a_cisconetworkingacademy-jsinstitute-htmlessentials-share-7468396504550907904-T75I/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEYplCIB-WqJZezmyhScbMlZs_fHSPnJV7I",
-    badge: "HTML",
-  },
   {
-    id: 5,
-    title: "JavaScript (Basic)",
+    id: 4,
+    title: "Node.js (Basic) & JavaScript (Basic)",
     issuer: "HackerRank",
     date: "2024",
     credentialId: "HackerRank",
-    description: "Certified in JavaScript (Basic) by HackerRank demonstrating strong algorithmic and programming skills.",
+    description: "Certified in Node.js and JavaScript (Basic) by HackerRank for strong programming skills.",
     icon: "⚡",
     color: "violet",
-    link: "https://www.hackerrank.com/certificates/iframe/5b6ff647604d",
+    link: "https://hackerrank.com",
     badge: "JS",
   },
-  {
-    id: 6,
-    title: "Node (Basic)",
-    issuer: "HackerRank",
-    date: "2024",
-    credentialId: "HackerRank",
-    description: "Certified in Node (Basic) by HackerRank demonstrating strong algorithmic and programming skills.",
-    icon: "🟢",
-    color: "cyan",
-    link: "https://www.hackerrank.com/certificates/iframe/0cec765b03c1",
-    badge: "Node",
-  },
-  {
-    id: 7,
-    title: "SQL (Basic)",
-    issuer: "HackerRank",
-    date: "2024",
-    credentialId: "HackerRank",
-    description: "Certified in SQL (Basic) by HackerRank demonstrating strong database querying skills.",
-    icon: "💾",
-    color: "blue",
-    link: "https://www.hackerrank.com/certificates/iframe/93102c4eb77f",
-    badge: "SQL",
-  },
-  {
-    id: 8,
-    title: "React(Basic)",
-    issuer: "HackerRank",
-    date: "2024",
-    credentialId: "HackerRank",
-    description: "Certified in React (Basic) by HackerRank demonstrating strong frontend development skills.",
-    icon: "⚛️",
-    color: "purple",
-    link: "https://www.hackerrank.com/certificates/iframe/0475afd2782e",
-    badge: "React",
-  },
-  
 ];
 
 export const achievements = [
@@ -264,57 +246,52 @@ export const achievements = [
     items: [
       {
         title: "Smart India Hackathon (SIH) 2025",
-        description: "Represented Gautam Buddha University with an innovative tech solution at national level hackathon.",
+        description: "Collaborated on solving a real-world problem statement at national level hackathon.",
         year: "2025",
       },
     ],
   },
   {
     id: 2,
-    category: "Cloud & AI",
+    category: "Internship",
     icon: "☁️",
     color: "blue",
     items: [
       {
-        title: "Google Cloud Computing Foundation",
-        description: "Earned Google Cloud Computing Foundation and Generative AI Certification.",
-        year: "2024",
-      },
-      {
-        title: "GenAI Data Analytics Simulation",
-        description: "Completed GenAI Powered Data Analytics Job Simulation Certificate.",
-        year: "2024",
+        title: "Salesforce Developer Intern",
+        description: "Built a Placement Management System using LWC, Apex, SOQL/SOSL at Salesforce.",
+        year: "2026",
       },
     ],
   },
   {
     id: 3,
-    category: "Industry Simulations",
+    category: "Cloud & AI",
     icon: "🏆",
     color: "cyan",
     items: [
       {
-        title: "Deloitte Data Analytics",
-        description: "Completed Deloitte Data Analytics Job Simulation on LinkedIn.",
+        title: "Google Cloud Computing Foundation",
+        description: "Certified in Google Cloud Computing Foundation and Generative AI.",
+        year: "2024",
+      },
+      {
+        title: "Tata GenAI Data Analytics",
+        description: "Completed Tata GenAI Powered Data Analytics Job Simulation.",
         year: "2024",
       },
     ],
   },
   {
     id: 4,
-    category: "Coding Certifications",
-    icon: "🎯",
+    category: "Industry Simulations",
+    icon: "�",
     color: "violet",
     items: [
       {
-        title: "HackerRank — Node.js & JavaScript",
-        description: "Certified in Node.js (Basic) and JavaScript (Basic) by HackerRank for strong programming skills.",
+        title: "Deloitte Data Analytics",
+        description: "Completed Deloitte Data Analytics Job Simulation on LinkedIn.",
         year: "2024",
-      },
-      {
-        title: "HTML Essentials",
-        description: "Earned HTML Essentials certificate from LinkedIn Learning.",
-        year: "2023",
       },
     ],
   },

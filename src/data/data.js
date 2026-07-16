@@ -86,6 +86,8 @@ export const skills = [
       { name: "Machine Learning", level: 80 },
       { name: "Data Analysis", level: 85 },
       { name: "Generative AI", level: 75 },
+      { name: "Prompt Engineering", level: 82 },
+      { name: "Artificial Intelligence", level: 78 },
       { name: "Pandas", level: 82 },
     ],
   },

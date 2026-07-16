@@ -246,7 +246,7 @@ export const achievements = [
     items: [
       {
         title: "Smart India Hackathon (SIH) 2025",
-        description: "Collaborated on solving a real-world problem statement at national level hackathon.",
+        description: "Collaborated on solving a real-world problem    statement at national level hackathon.",
         year: "2025",
       },
     ],

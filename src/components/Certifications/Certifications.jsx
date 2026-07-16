@@ -69,7 +69,7 @@ const Certifications = ({ darkMode }) => (
         <h2 className="section-title">My <span className="gradient-text">Credentials</span></h2>
         <p className="section-subtitle">Professional certifications validating my expertise across technologies.</p>
       </motion.div>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
         {certifications.map((cert, i) => <CertCard key={cert.id} cert={cert} index={i} darkMode={darkMode} />)}
       </div>
     </div>

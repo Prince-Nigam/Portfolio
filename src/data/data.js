@@ -149,7 +149,7 @@ export const projects = [
     gradient: "from-indigo-500 to-purple-600",
     tags: ["HTML", "CSS", "JavaScript", "GitHub Pages"],
     github: "https://github.com/Prince-Nigam/studyhub",
-    live: "https://prince-nigam.github.io/studyhub",
+    live: "https://studyhub-bay.vercel.app/",
     featured: true,
     status: "In Progress",
   },

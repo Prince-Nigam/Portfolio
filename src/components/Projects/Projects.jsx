@@ -219,9 +219,105 @@ const DefaultIllustration = ({ title, gradient }) => (
   </div>
 );
 
+/* ── StudyHub Illustration ── */
+const StudyHubIllustration = () => (
+  <div className="w-full h-full relative overflow-hidden bg-gradient-to-br from-indigo-950 via-purple-950 to-slate-900 flex items-center justify-center">
+    {/* Animated grid bg */}
+    <div className="absolute inset-0 opacity-10"
+      style={{ backgroundImage: 'radial-gradient(rgba(139,92,246,0.8) 1px, transparent 1px)', backgroundSize: '20px 20px' }} />
+
+    {/* Floating glow orbs */}
+    <div className="absolute top-4 left-6 w-16 h-16 rounded-full opacity-20 blur-xl" style={{ background: 'radial-gradient(circle, #8b5cf6, transparent)' }} />
+    <div className="absolute bottom-4 right-6 w-20 h-20 rounded-full opacity-15 blur-xl" style={{ background: 'radial-gradient(circle, #6366f1, transparent)' }} />
+
+    {/* Main book/study illustration */}
+    <div className="relative flex flex-col items-center gap-3">
+
+      {/* Open Book 3D */}
+      <div className="relative" style={{ perspective: '300px' }}>
+        <motion.div
+          animate={{ rotateY: [0, 5, 0, -5, 0] }}
+          transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+          className="flex items-end gap-0.5"
+          style={{ transformStyle: 'preserve-3d' }}
+        >
+          {/* Left page */}
+          <div className="w-16 h-20 rounded-l-sm flex flex-col justify-between p-1.5"
+            style={{ background: 'linear-gradient(135deg, rgba(255,255,255,0.12), rgba(255,255,255,0.04))', border: '1px solid rgba(255,255,255,0.15)', borderRight: 'none', boxShadow: '-4px 4px 10px rgba(0,0,0,0.4)' }}>
+            <div className="space-y-1">
+              {[80, 60, 70, 50, 65].map((w, i) => (
+                <div key={i} className="h-1 rounded-full" style={{ width: `${w}%`, background: 'rgba(139,92,246,0.7)' }} />
+              ))}
+            </div>
+            <div className="text-[6px] font-bold text-purple-300 opacity-80">NOTES</div>
+          </div>
+          {/* Spine */}
+          <div className="w-1.5 h-20 rounded-none"
+            style={{ background: 'linear-gradient(180deg, rgba(139,92,246,0.9), rgba(99,102,241,0.9))', boxShadow: '0 0 8px rgba(139,92,246,0.5)' }} />
+          {/* Right page */}
+          <div className="w-16 h-20 rounded-r-sm flex flex-col justify-between p-1.5"
+            style={{ background: 'linear-gradient(135deg, rgba(255,255,255,0.04), rgba(255,255,255,0.12))', border: '1px solid rgba(255,255,255,0.15)', borderLeft: 'none', boxShadow: '4px 4px 10px rgba(0,0,0,0.4)' }}>
+            <div className="space-y-1">
+              {[70, 80, 55, 75, 60].map((w, i) => (
+                <div key={i} className="h-1 rounded-full" style={{ width: `${w}%`, background: 'rgba(99,102,241,0.7)' }} />
+              ))}
+            </div>
+            <div className="text-[6px] font-bold text-indigo-300 opacity-80">STUDY</div>
+          </div>
+        </motion.div>
+      </div>
+
+      {/* StudyHub label */}
+      <div className="px-3 py-1 rounded-full text-[10px] font-bold tracking-widest"
+        style={{ background: 'rgba(139,92,246,0.2)', border: '1px solid rgba(139,92,246,0.4)', color: '#a78bfa' }}>
+        STUDYHUB
+      </div>
+
+      {/* Floating resource cards */}
+      <div className="absolute -top-2 -right-12 flex flex-col gap-1">
+        {['📄 Notes', '📚 Books', '🔗 Links'].map((item, i) => (
+          <motion.div key={i}
+            animate={{ x: [0, 4, 0], opacity: [0.6, 1, 0.6] }}
+            transition={{ duration: 2 + i * 0.5, repeat: Infinity, delay: i * 0.3 }}
+            className="px-2 py-0.5 rounded text-[8px] font-medium whitespace-nowrap"
+            style={{ background: 'rgba(99,102,241,0.2)', border: '1px solid rgba(99,102,241,0.3)', color: '#a5b4fc' }}>
+            {item}
+          </motion.div>
+        ))}
+      </div>
+
+      {/* Floating subject tags */}
+      <div className="absolute -top-2 -left-12 flex flex-col gap-1">
+        {['📐 Math', '🔬 Science', '💡 AI'].map((item, i) => (
+          <motion.div key={i}
+            animate={{ x: [0, -4, 0], opacity: [0.6, 1, 0.6] }}
+            transition={{ duration: 2 + i * 0.5, repeat: Infinity, delay: i * 0.4 }}
+            className="px-2 py-0.5 rounded text-[8px] font-medium whitespace-nowrap"
+            style={{ background: 'rgba(139,92,246,0.2)', border: '1px solid rgba(139,92,246,0.3)', color: '#c4b5fd' }}>
+            {item}
+          </motion.div>
+        ))}
+      </div>
+    </div>
+
+    {/* Bottom progress bar */}
+    <div className="absolute bottom-3 left-4 right-4">
+      <div className="flex justify-between items-center mb-1">
+        <span className="text-[8px] text-purple-300 opacity-70">Progress</span>
+        <span className="text-[8px] text-purple-300 opacity-70">72%</span>
+      </div>
+      <div className="h-1 rounded-full" style={{ background: 'rgba(255,255,255,0.08)' }}>
+        <motion.div className="h-full rounded-full" style={{ background: 'linear-gradient(90deg, #8b5cf6, #6366f1)' }}
+          animate={{ width: ['0%', '72%'] }} transition={{ duration: 2, delay: 0.5 }} />
+      </div>
+    </div>
+  </div>
+);
+
 const ProjectIllustration = ({ title, gradient }) => {
   if (title === 'SecureVault') return <SecureVaultIllustration />;
   if (title === 'Fresh Grocery Mart') return <FreshMartIllustration />;
+  if (title === 'StudyHub') return <StudyHubIllustration />;
   return <DefaultIllustration title={title} gradient={gradient} />;
 };
 

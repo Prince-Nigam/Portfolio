@@ -137,6 +137,22 @@ export const projects = [
     featured: true,
     status: "In Progress",
   },
+  {
+    id: 3,
+    title: "StudyHub",
+    category: "Web App",
+    description:
+      "A collaborative study platform for students to share resources, notes, and study materials. Features organized content management and a clean, student-friendly interface.",
+    longDescription:
+      "StudyHub is a web-based collaborative study platform designed to help students share and access study resources, notes, and materials in an organized manner. Built with a clean and intuitive interface to enhance the study experience.",
+    image: null,
+    gradient: "from-indigo-500 to-purple-600",
+    tags: ["HTML", "CSS", "JavaScript", "GitHub Pages"],
+    github: "https://github.com/Prince-Nigam/studyhub",
+    live: "https://prince-nigam.github.io/studyhub",
+    featured: true,
+    status: "In Progress",
+  },
 ];
 
 export const experience = [

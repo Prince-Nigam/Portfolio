@@ -1,8 +1,13 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FiMail, FiPhone, FiMapPin, FiGithub, FiLinkedin, FiSend, FiCheck, FiTwitter } from 'react-icons/fi';
+import emailjs from '@emailjs/browser';
 import SectionWrapper from '../common/SectionWrapper';
 import { personalInfo } from '../../data/data';
+
+const EMAILJS_SERVICE_ID  = 'service_h2a7n4j';
+const EMAILJS_TEMPLATE_ID = 'template_1zpt3gg';
+const EMAILJS_PUBLIC_KEY  = '7viHhWhM21xFBSu7k';
 
 const colorMap = {
   purple: { bg: 'rgba(168,85,247,0.1)', border: 'rgba(168,85,247,0.2)', text: '#a855f7' },
@@ -39,10 +44,26 @@ const Contact = ({ darkMode }) => {
     const errs = validate();
     if (Object.keys(errs).length) { setErrors(errs); return; }
     setStatus('sending');
-    await new Promise((r) => setTimeout(r, 1500));
-    setStatus('sent');
-    setForm({ name: '', email: '', subject: '', message: '' });
-    setTimeout(() => setStatus('idle'), 4000);
+    try {
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          name:    form.name,
+          email:   form.email,
+          title:   form.subject || 'No Subject',
+          message: form.message,
+        },
+        EMAILJS_PUBLIC_KEY
+      );
+      setStatus('sent');
+      setForm({ name: '', email: '', subject: '', message: '' });
+      setTimeout(() => setStatus('idle'), 4000);
+    } catch (err) {
+      console.error('EmailJS error:', err);
+      setStatus('error');
+      setTimeout(() => setStatus('idle'), 4000);
+    }
   };
 
   const contactItems = [
@@ -170,11 +191,16 @@ const Contact = ({ darkMode }) => {
                   className="w-full flex items-center justify-center gap-2.5 py-3.5 rounded-xl font-semibold text-white transition-all duration-300"
                   style={status === 'sent'
                     ? { background: 'linear-gradient(135deg,#059669,#10b981)', boxShadow: '0 4px 15px rgba(16,185,129,0.3)' }
+                    : status === 'error'
+                    ? { background: 'linear-gradient(135deg,#dc2626,#ef4444)', boxShadow: '0 4px 15px rgba(220,38,38,0.3)' }
                     : { background: 'linear-gradient(135deg,#a855f7,#3b82f6)', boxShadow: '0 4px 15px rgba(168,85,247,0.3)' }}>
                   {status === 'sending' && <motion.div animate={{ rotate: 360 }} transition={{ repeat: Infinity, duration: 1, ease: 'linear' }} className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full" />}
                   {status === 'sent' && <FiCheck size={18} />}
-                  {status === 'idle' && <FiSend size={18} />}
-                  {status === 'idle' ? 'Send Message' : status === 'sending' ? 'Sending...' : 'Message Sent!'}
+                  {(status === 'idle' || status === 'error') && <FiSend size={18} />}
+                  {status === 'idle'    ? 'Send Message'  :
+                   status === 'sending' ? 'Sending...'    :
+                   status === 'sent'    ? 'Message Sent!' :
+                   'Failed! Try Again'}
                 </motion.button>
               </form>
             </div>

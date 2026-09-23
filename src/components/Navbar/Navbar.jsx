@@ -60,7 +60,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             className="w-9 h-9 rounded-xl overflow-hidden border-2 border-purple-500/50"
           >
             <img
-              src="/image.png"
+              src="/Normal Pic.jpeg"
               alt="Prince Nigam"
               className="w-full h-full object-cover object-top"
             />

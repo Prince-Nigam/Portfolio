@@ -57,10 +57,13 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           whileTap={{ scale: 0.98 }}
         >
           <div
-            className="w-9 h-9 rounded-xl flex items-center justify-center text-base font-black text-white"
-            style={{ background: 'linear-gradient(135deg, #a855f7, #3b82f6)' }}
+            className="w-9 h-9 rounded-xl overflow-hidden border-2 border-purple-500/50"
           >
-            P
+            <img
+              src="/image.png"
+              alt="Prince Nigam"
+              className="w-full h-full object-cover object-top"
+            />
           </div>
           <span className={`font-bold text-lg hidden sm:block ${textColor}`}>
             Prince<span className="gradient-text"> Nigam</span>

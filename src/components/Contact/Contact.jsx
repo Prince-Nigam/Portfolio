@@ -5,7 +5,7 @@ import emailjs from '@emailjs/browser';
 import SectionWrapper from '../common/SectionWrapper';
 import { personalInfo } from '../../data/data';
 
-const EMAILJS_SERVICE_ID  = 'service_h2a7n4j';
+const EMAILJS_SERVICE_ID  = 'service_4yvithr';
 const EMAILJS_TEMPLATE_ID = 'template_1zpt3gg';
 const EMAILJS_PUBLIC_KEY  = '7viHhWhM21xFBSu7k';
 

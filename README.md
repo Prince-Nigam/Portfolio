@@ -49,15 +49,15 @@
 
 ## 📖 About
 
-> **Prince Nigam Portfolio** ek modern, premium aur fully responsive portfolio website hai jo React, Vite aur Tailwind CSS se banaya gaya hai. Isme advanced animations, dark/light mode, animated coding background, 3D project illustrations aur bahut kuch hai.
+> **Prince Nigam Portfolio** is a modern, premium, and fully responsive portfolio website built with React, Vite, and Tailwind CSS. It includes advanced animations, dark/light mode, an animated coding background, 3D project illustrations, and much more.
 
-Yeh portfolio specially **B.Tech CSE (Data Science & ML)** students ke liye design kiya gaya hai jo apni skills, projects, certifications aur achievements ko ek professional way mein showcase karna chahte hain.
+This portfolio is specially designed for **B.Tech CSE (Data Science & ML)** students who want to showcase their skills, projects, certifications, and achievements in a professional way.
 
-**Portfolio ka main maqsad:**
-- 💼 **Recruiters** ko apni skills aur projects dikhana
-- 🎓 **Academic achievements** aur certifications showcase karna
-- 🌐 **Online presence** build karna
-- 📬 **Easy contact** through portfolio
+**Main goals of the portfolio:**
+- 💼 **Show recruiters** your skills and projects
+- 🎓 **Showcase academic achievements** and certifications
+- 🌐 **Build an online presence**
+- 📬 **Easy contact** through the portfolio
 
 ---
 
@@ -100,17 +100,17 @@ Yeh portfolio specially **B.Tech CSE (Data Science & ML)** students ke liye desi
 
 ## 📸 Sections Overview
 
-Portfolio mein **8 main sections** hain — har ek section ka kaam alag hai:
+The portfolio has **8 main sections** — each section serves a different purpose:
 
 ### 🏠 1. Hero Section
 - Animated **profile photo** with glowing border effect
 - **Typing animation** showing multiple roles dynamically
-- **Tagline** aur short introduction
+- **Tagline** and short introduction
 - **CTA Buttons** — View Projects & Download Resume
 - Social media links (GitHub, LinkedIn)
 
 ### 👤 2. About Section
-- Detailed **personal bio** aur career objective
+- Detailed **personal bio** and career objective
 - Key information cards (University, Location, Email)
 - **Stats display** — Projects, Certifications count
 
@@ -303,28 +303,28 @@ npm run lint       # Run ESLint to check code quality
 
 ## ✏️ How to Update Content
 
-> ⭐ **Sabhi personal data ek hi file mein hai:** `src/data/data.js`
-> 
-> Sirf yeh file edit karo aur portfolio automatically update ho jayega!
+> ⭐ **All personal data is in a single file:** `src/data/data.js`
+>
+> Just edit this file and the portfolio will update automatically!
 
 ### 👤 Personal Information
 ```js
 export const personalInfo = {
-  name: "Apna Naam",
-  title: "Apni Title",
-  email: "apna@email.com",
+  name: "Your Name",
+  title: "Your Title",
+  email: "your@email.com",
   phone: "+91 XXXXXXXXXX",
-  location: "Apna Sheher",
-  resumeUrl: "/resume.pdf",    // resume.pdf ko public/ folder mein daalo
-  profileImage: "/image.png",  // photo ko public/ folder mein daalo
+  location: "Your City",
+  resumeUrl: "/resume.pdf",    // place resume.pdf inside the public/ folder
+  profileImage: "/image.png",  // place photo inside the public/ folder
   social: {
-    github: "https://github.com/tumhara-username",
-    linkedin: "https://linkedin.com/in/tumhara-profile",
+    github: "https://github.com/your-username",
+    linkedin: "https://linkedin.com/in/your-profile",
   }
 }
 ```
 
-### 🛠️ Skills Update karna
+### 🛠️ Updating Skills
 ```js
 export const skills = [
   {
@@ -338,7 +338,7 @@ export const skills = [
 ]
 ```
 
-### 💼 Project Add karna
+### 💼 Adding a Project
 ```js
 export const projects = [
   {
@@ -354,7 +354,7 @@ export const projects = [
 ]
 ```
 
-### 🏆 Certificate Add karna
+### 🏆 Adding a Certificate
 ```js
 export const certifications = [
   {
@@ -365,19 +365,19 @@ export const certifications = [
     description: "Certificate description...",
     icon: "☁️",           // emoji
     color: "blue",        // blue | purple | cyan | violet
-    link: "https://verify-link.com",  // Verify button ka link
+    link: "https://verify-link.com",  // link for the Verify button
     badge: "BADGE",       // Short badge text
   }
 ]
 ```
 
-### 🖼️ Profile Photo Update karna
-1. Apni photo ko `/public/image.png` mein daalo
-2. `data.js` mein: `profileImage: "/image.png"` set karo
+### 🖼️ Updating the Profile Photo
+1. Place your photo inside `/public/image.png`
+2. In `data.js`, set: `profileImage: "/image.png"`
 
-### 📄 Resume Update karna
-1. Apna resume PDF `/public/resume.pdf` mein daalo
-2. Download Resume button automatically kaam karega
+### 📄 Updating the Resume
+1. Place your resume PDF inside `/public/resume.pdf`
+2. The Download Resume button will work automatically
 
 ---
 
@@ -412,28 +412,28 @@ export const certifications = [
 # Step 1: Build the project
 npm run build
 
-# Step 2: dist/ folder ko Netlify pe drag & drop karo
+# Step 2: Drag & drop the dist/ folder onto Netlify
 # Visit → https://app.netlify.com/drop
 ```
 
 ### Option 2: Netlify GitHub Auto-Deploy
-1. GitHub pe repo push karo
-2. [netlify.com](https://netlify.com) pe login karo
-3. **"New site from Git"** click karo
-4. GitHub repo select karo
+1. Push your repo to GitHub
+2. Log in to [netlify.com](https://netlify.com)
+3. Click **"New site from Git"**
+4. Select your GitHub repo
 5. Build command: `npm run build`
 6. Publish directory: `dist`
-7. **Deploy!** — Har git push pe auto-deploy hoga ✅
+7. **Deploy!** — It will auto-deploy on every git push ✅
 
 ### Option 3: GitHub Pages
 ```bash
-# vite.config.js mein base URL set karo
+# Set the base URL in vite.config.js
 base: '/Portfolio/'
 
-# Build karo
+# Build the project
 npm run build
 
-# gh-pages package se deploy karo
+# Deploy using the gh-pages package
 npm install --save-dev gh-pages
 npm run deploy
 ```
@@ -444,11 +444,11 @@ npm run deploy
 
 | Issue | Solution |
 |-------|----------|
-| Port already in use | `vite.config.js` mein port change karo |
-| Dependencies not installing | `npm cache clean --force` phir `npm install` |
-| Build fails | `node_modules` delete karo, `npm install` dobara karo |
-| Images not showing | `/public` folder mein daalo, `/` se path start karo |
-| Changes not reflecting | Browser mein `Ctrl+Shift+R` se hard refresh karo |
+| Port already in use | Change the port in `vite.config.js` |
+| Dependencies not installing | Run `npm cache clean --force`, then `npm install` |
+| Build fails | Delete `node_modules`, then run `npm install` again |
+| Images not showing | Place them inside the `/public` folder and start the path with `/` |
+| Changes not reflecting | Hard refresh the browser with `Ctrl+Shift+R` |
 
 ---
 
@@ -474,7 +474,7 @@ npm run deploy
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&animation=twinkling" width="100%"/>
 
-### ⭐ Agar yeh portfolio acha laga toh Star zaroor do!
+### ⭐ If you liked this portfolio, please leave a Star!
 
 **Made with ❤️ and ☕ by Prince Nigam**
 

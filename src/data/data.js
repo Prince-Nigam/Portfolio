@@ -246,7 +246,7 @@ export const certifications = [
     title: "Node.js",
     issuer: "HackerRank",
     date: "2024",
-    credentialId: "HackerRank",
+    credentialId: "HackerRank"        
     description: "Certified in Node.js by HackerRank for strong backend development skills.",
     icon: "⚡",
     color: "violet",
